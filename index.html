@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Classify To Segment</title>
+    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+  </head>
+  <body>    
+    <!-- Hero section -->
+    <section id="hero" class="text-black-50 tm-font-big tm-parallax">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
+        <div class="container">   
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#introduction">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#goals">Goals</a>
+              </li>
+			  <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#methodology">Methodology</a>
+              </li>
+			  <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#results">Results</a>
+              </li> 
+			  <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#achievements">Achievements</a>
+              </li>
+			  <li class="nav-item">
+                  <a class="nav-link tm-nav-link" href="#research">Research</a>
+              </li> 
+            </ul>
+          </div>        
+        </div>
+      </nav>
+      
+      <div class="text-center tm-hero-text-container">
+        <div class="tm-hero-text-container-inner">
+            <h2 class="tm-hero-title">Classify To Segment</h2>
+            <p class="tm-hero-subtitle">
+				United approach for classification and segmentation – using Guided Attention Inference Network
+            </p>
+        </div>        
+      </div>
+
+      <div class="tm-next tm-intro-next">
+        <a href="#introduction" class="text-center tm-down-arrow-link">
+          <i class="fas fa-3x fa-caret-down tm-down-arrow"></i>
+        </a>
+      </div>      
+    </section>
+
+    <section id="introduction" class="tm-section-pad-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="img/the-town-01.jpg" alt="Image" class="img-fluid tm-intro-img" />
+          </div>
+          <div class="col-lg-6">
+            <div class="tm-intro-text-container">
+                <h2 class="tm-text-primary mb-4 tm-section-title">Introduction</h2>
+                <p class="mb-4 tm-intro-text">
+				  In the last years, with the enourmously fast development of artificial intelligence field, 
+				  there are many attempts to automate many tasks and roles performed traditionally by humans,
+				  and even outperform them. Particulary, Medical image-based diagnoses, such as 
+				  pathology, radiology, and endoscopy, are expected to be the first
+				  in the medical field to be affected by AI methods, in particular by deep learning networks and algorithms.
+				  For example, a convolutional neural network was recently reported as being highly beneficial in the field of endoscopy.
+				  <br><br>
+                </p>
+                <p class="mb-5 tm-intro-text">
+				  Medtronic uses PillCam device, which is a disposable capsule that uses a miniaturized camera to make thousands of snapshots the GI tract.
+				  The goal is to replace the traditional methods of endoscopy, which are more specialists-dependent, costlier, more complicated and e.t.c.
+				  Deep learning methods can significantly help to mine and sort the most important and valuable shots,
+				  which will accelerate the diagnostics process and even increase its assurence and quality,
+				  by adding a computational-assistant which can process huge amounts of data.
+				  
+                  
+				</p>
+				<p class="mb-6 tm-intro-text">
+				In our project, firstly we train a deep learning network to classify ill and healthy GI tract shots,
+				  <br/> secondly we use an attention mechansim to improve the network performance, and add other capabilities on which we detail further.
+				</p>
+                <div class="tm-next">
+				<br/><br/>
+                  <a href="#goals" class="tm-intro-text tm-btn-primary">See More</a>
+				<br/><br/><br/><br/><br/>
+                </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="row">
+            <div class="col-12">
+				<div class="text-center col-12">
+				  <h2 class="tm-text-primary tm-section-title mb-4">PillCam snapshot samples</h2>
+				</div>  
+                <div class="mx-auto tm-gallery-container">
+                    <div class="grid tm-gallery">
+                      <a href="img/s1.png">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/s1.png" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>PilCam image example 1</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/s1m.png">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/s1m.png" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>PilCam image example 1 segmentation mask</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/s2.png">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/s2.png" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>PilCam image example 2</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/s2m.png">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/s2m.png" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>PilCam image example 2 segmentation mask</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/s3.png">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/s3.png" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>PilCam image example 3</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/s3m.png">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/s3m.png" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>PilCam image example 3 segmentation mask</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      
+                    </div>
+                </div>                
+            </div>        
+          </div>
+
+       
+		
+        <div class="col-lg-4 mt-5 mt-lg-0"></div>
+      </div>
+    </section>
+    <section id="goals" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+              <h2 class="tm-text-primary tm-section-title mb-4">Goals</h2>
+          </div>   
+		  <p>
+			Our main goal is to use deep learning network to classify PillCam shots to healthy and ill,
+			<br/> and also to incorporate an attention mechanism which will imporve the network performance,
+			<br/> by focusing it on the most significant area to the classification decision.
+			<br><br> 
+			Thus, we want to achieve the following outcomes:  
+			<br/>
+			</br>
+			<i class="fas fa-circle"></i> Improve the classification on positives, i.e true-positives, 
+										  given a very high bound on the false-negatives are allowed to occure.<br/>
+			</br>
+			<i class="fas fa-circle"></i> Localize the area that contributed to the classification decision the most,
+										  <br/>and be able to show it to any observer, i.e weak-segmentation task.
+			</br></br>
+			<i class="fas fa-circle"></i> An additional achievable outcome from the last is an increase of explainability of the networks classification decisions,<br/>
+										  such that if the network makes wrong decisions, the observer has additional indicators,<br/>
+										  which are the corresponding false-localization areas, which can be analyzed for further imporvement.
+			<br/>
+			
+		  </p>
+        </div>
+		</div>
+        
+    </section>
+	
+	</section>
+    <section id="methodology" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+              <h2 class="tm-text-primary tm-section-title mb-4">Methodology and Instruments</h2>
+          </div>   
+		  <p>
+			In our approach incroporated with the <a href="https://arxiv.org/abs/1802.10171">Guided-Attention-Infference-Network (GAIN) method</a>,
+			<br/>we will use a deep learning classification network <a href="https://pytorch.org/vision/stable/models.html#mobilenet-v2">MobileNet V2</a> for a binary-classification task for ill and healthy shots,
+			<br/>with an additional visualizing capability of the reasonings for those classifications.
+			</br>The method for the networks reasoning visualization is called <a href="https://arxiv.org/abs/1610.02391">GradCAM</a>,
+			<br/> a prime component in the GAIN method, which is an improvement of <a href="https://arxiv.org/abs/1512.04150">CAM method</a> .
+			<br/><br/>CAM - Class Activation Maps in its different variations (GradCAM and e.t.c) are a family of CNN-explanation visualizations methods,
+			<br/>which are based on the observation, that convolutional layers naturally retain spatial information which is lost in fully-connected layers, 
+			<br/>so it can expected that the last convolutional layers have the best compromise between high-level semantics and detailed spatial information. 
+			
+			<br/><br/>Further, we will guide our network usings those visualizations to improve its own decisions
+			<br/>(which is the main novelty of GAIN comparing to regular visualization techniques mentioned above),
+			<br/>in a way known as self-attention mechanism, which generally are widely and variously used in many deep learning networks.
+			<br/>Additionally, GAIN method also allows to use an extra-supervision with the masks of our positive images, 
+			<br/>which where seen in the examples above.
+			<br/>
+			
+			<br/>Briefly, GAIN method can be summerized as following:
+			<br/>Firstly, GAIN method creates an attention map as a heatmap of its classification-decision.
+			<br/>Secondely, it uses this map to modificate and erase from the image the most significant part to the classification-decision.
+			<br/>Finally, by passing the modificated image through to network and by a special definition of so-called AM(Attention-Mining) loss,
+			<br/>and optimizing it, it forces the heatmap to cover all the significant areas to classification-decision.
+			<br/>AM loss defined as the classification score of the masked image to be the class according to which it was masked, 
+			<br/>i.e the groundtruth class. The minimization of that score should lead the heatmap to grow all over the region of interest
+			<br/>of the groundtruth class.
+			<br/>As to the extra-supervision part, GAIN directly define the loss as the pixel-wise difference between the heatmap and the pre-given masks.
+			
+			<br/><br/>
+			<i class="fas fa-circle"></i> Firstly, we try to achieve some reproducibility of the GAIN paper results on the VOC 2012 dataset with 
+			<a href="https://pytorch.org/vision/stable/models.html#id2">VGG</a> network used in the paper. 
+			
+			<br/><br/>
+			<i class="fas fa-circle"></i> We also experiment with the gradients backward path of the masked image setting it on/off.</br>
+			The influence of this gradients strongly associated with the capability of the AM loss increase the attention map,</br>
+			where semantically it can be understood as the AM loss influence on the network to say on the inputed masked image,</br>
+			how much it isn't the class was masked. If the gradients are set off, it doesn't say that at all, which leads to attention map growing larger.		
+			See image attached for illustration.
+			
+			<br/><br/>
+			<i class="fas fa-circle"></i> In the paper the authors used a single-image-per-batch approach, which we upgraded to multibatch mode,
+			which allows the direct pararel computation of many GradCAM heatmaps for a batch of images at a time.
+			
+			<br/><br/>
+			<i class="fas fa-circle"></i> In Medtronic Data it is more convenient to use AM loss only on positive samples, 
+			<br/>as the negative samples could not changed to positive by erasing any details, i.e the whole tissue is healthy.
+			
+			<br/><br/>
+			<i class="fas fa-circle"></i>We manipulated the color of the erased area to be the average RGB color of the region of interest of all of the images.
+			
+			<br/><br/>
+			<i class="fas fa-circle"></i>The experiments were done on a remote Amazon GPU Engine. 
+			
+			<br/><br/>
+			We used PyTorch as the main deep learning framework with Tensorboard logging of all of the training & testing measurments, such as:
+			<br/>
+			<i class="fas fa-circle"></i> Loss per iteration/epoch
+			<br/>
+			<i class="fas fa-circle"></i> ROC measurmenet - given a threshhold of FA of 0.05% and 0.1%, idicates the rate of true-positives can be achieved.
+			<br/>
+			<i class="fas fa-circle"></i> IOU - intersection over union of heatmaps and pre-given masks to measure the localization quality and imporvement. 
+		
+        </div>
+        <div class="row">
+            <div class="col-12">
+				<div class="text-center col-12">
+				  <h2 class="tm-text-primary tm-section-title mb-4">Some Screenshots</h2>
+				</div>  
+                <div class="mx-auto tm-gallery-container">
+                    <div class="grid tm-gallery">
+                      <a href="img/GCAM.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/GCAM.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>GradCAM Illustration</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/GAIN.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/GAIN.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>GAIN training scheme</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/GAIN_i.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/GAIN_i.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>GAIN Illustration (paper)</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/VOC.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/VOC.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>VOC 2012 (paper dataset)</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                </div>                
+            </div>        
+          </div>
+		  
+		   <div class="row tm-section-pad-top">
+          <div class="col-lg-4">
+            <h4 class="text-center tm-text-primary mb-4"><a rel="nofollow" href="https://pytorch.org/">Pytorch</a> && <a rel="nofollow" href="https://www.tensorflow.org/tensorboard/get_started">Tensorboard</a> Monitoring</h4>
+			<div class="text-center">
+				<img src="img/PyTorch.jpg" alt="Pytorch Icon">
+			</div>
+          </div>
+        
+        <div class="col-lg-4 mt-5 mt-lg-0">
+		  <div class="text-center">
+		  </div>
+        </div>
+		
+        <div class="col-lg-4 mt-5 mt-lg-0">
+          <h4 class="text-center tm-text-primary mb-4"><a rel="nofollow" href="https://www.jetbrains.com/pycharm/">Pycharm IDE</a></h4>
+		  <div class="text-center">
+		    <img src="img/PyCharm.jpg" alt="PyCharm Icon">
+		  </div>
+        </div>
+      </div>
+	  <div class="row" style="padding-top: 20px;">
+          <div class="col-lg-4"></div>
+        
+        <div class="col-lg-4 mt-5 mt-lg-0">
+          <h4 class="text-center tm-text-primary mb-4"><a rel="nofollow" href="https://aws.amazon.com/products/compute/">AWS</a></h4>
+		  <div class="text-center">
+		    <img src="img/AWS.jpg" alt="AWS Icon">
+		  </div>
+        </div>
+      </div>
+	  
+	  
+	  
+    </section>
+	
+	<section id="results" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+              <h2 class="tm-text-primary tm-section-title mb-4">Results</h2>
+          </div>   
+		  <p>
+			The first Table (up to down) shows the results of training with only extra-supervision with different amount of masks.
+			<br/>The second Table shows the results of training with Attention-Mining self-supervision only, 
+			<br/>and combining the two methods as it presented in the formulas (see above or in the paper),
+			<br/>i.e combining Attention-Mining self-supervision with extra-supervision together with the pre-given masks.
+			<br/>Another important aspect of the results of the second table is the "grad on/off notation",
+			<br/>as was explained and demonstrated in the previous section.
+			
+			<br/><br/>The results we've obtained werent unequivocal:
+			<br/>From one hand using only extra-supervision gave a little noisy increase in our ROC measure with 0.1% threshhold,
+			<br/> and more significant increase in 0.05% threshhold. It also has been observed that in multiple re-runs of those experiments,
+			<br/> the result more frequently achieved the highest results in ROC in both mesures. 
+			<br/>The IOU also has increased significantly, which can be seen in the visualizations.
+			From other hand incorporating Attention-Mining self-supervision mechanism was much trickier.
+			<br/>In Medtronic data, it wasn't observed significant improvement and in many cases, as presented in the table below,
+			<br/>It was seen that there is an unsignificant decline in the ROC measure, 
+			<br/>with eather no improvemt in localization (IOU), or decline in it.
+			<br/>In VOC 2012, working on paper results reproductions, we've niether noted significant changes in the attention maps,
+			<br/> as it presented in the paper, nor improvement in the performance.
+			
+			<br/><br/>Researching the case, we've found that manipulating the path of the backward-gradients in the Attention-Mining training,
+			<br/>(technical details can be found in the repository on <a rel="nofollow" href="https://github.com/ilyak93/GAIN-pytorch">GitHub</a>), 
+			can achieve in VOC interesting effect of very good localization in many cases,
+			<br/> although with a price of a decline in performance measured with accuracy, 
+			<br/>and a side-effect of increasing data-biases, which were noted in the attention map.
+			<br/>One example is as we can see in the first attached example, 
+			<br/>that a bird image in VOC 2012 dataset is heated with the trees aside her, discovering the bias of birds and trees/plants.
+			<br/>Another example were observed int the process is images of boats and the water with a large water area heated.
+			
+			<br/><br/>
+			As a result of this finding, which was emphasized by our academic stuff as an interesting research direction,
+			<br/> and as a result which could behave differently on Medtronic data, we've performed experimnets with gradient manipulation
+			<br/> and without it, as named in the second Table as "grads on" - without manipulation, "grads off" - with it.
+			<br/>Visual results also presented in this manner further.
+			
+			
+		  </p>
+		  
+		  <div class="row tm-section-pad-top">
+          <div class="col-lg-4">
+            <h4 class="text-center tm-text-primary mb-4">Extra-Supervision Results:</a></h4>
+			<div class="text-center">
+				<img src="img/results/ex.jpg" alt="Extra-Supervision Results">
+			</div>
+          </div>
+        
+        <div class="col-lg-4 mt-5 mt-lg-0">
+		  <div class="text-center">
+		  </div>
+        </div>
+		
+		<div class="col-lg-4 mt-5 mt-lg-0">
+		  <div class="text-center">
+		  </div>
+        </div>
+		
+		<div class="col-lg-4 mt-5 mt-lg-0">
+		  <div class="text-center">
+		  </div>
+        </div>
+		
+		
+        <div class="col-lg-4 mt-5 mt-lg-0">
+          <h4 class="text-center tm-text-primary mb-4">Attention-Mining Self-Supervision Results:</a></h4>
+		  <div class="text-center">
+		    <img src="img/results/am.jpg" alt="Attention-Mining Self-Supervision Results">
+		  </div>
+        </div>
+      </div>
+	  <div class="row" style="padding-top: 20px;">
+          <div class="col-lg-4"></div>
+        
+        
+      </div>
+		  
+        </div>
+        <div class="row">
+            <div class="col-12">
+				<div class="text-center col-12">
+				  <h2 class="tm-text-primary tm-section-title mb-4">VOC training attention maps: Gradients Off</h2>
+				  <h6>first two rows in the left image are GradCAM visualizations without Attention Maps training</h6>
+				</div>  
+                <div class="mx-auto tm-gallery-container">
+                    <div class="grid tm-gallery">
+                      <a href="img/results/VOC_grad_off.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/VOC_grad_off.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Test-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/results/VOC_grad_off2.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/VOC_grad_off2.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Train-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+					  
+					  <a href="img/results/LocBias.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/LocBias.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Good Localization vs Bias-Heating</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+					  
+                    </div>
+                </div>                
+            </div>        
+          </div>
+		  
+		  
+		  
+		  <div class="row">
+            <div class="col-12">
+				<div class="text-center col-12">
+				  <h2 class="tm-text-primary tm-section-title mb-4">VOC training attention maps: Gradients On</h2>
+				  <h6>first two rows in the left image are GradCAM visualizations without Attention Maps training</h6>
+				</div>  
+                <div class="mx-auto tm-gallery-container">
+                    <div class="grid tm-gallery">
+                      <a href="img/results/VOC_grad_on.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/VOC_grad_on.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Test-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/results/VOC_grad_on2.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/VOC_grad_on2.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Train-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                </div>                
+            </div>        
+          </div>
+		  
+		  <div class="row">
+            <div class="col-12">
+				<div class="text-center col-12">
+				  <h2 class="tm-text-primary tm-section-title mb-4">Medtronic Data training attention maps: Gradients Off</h2>
+				</div>  
+                <div class="mx-auto tm-gallery-container">
+                    <div class="grid tm-gallery">
+                      <a href="img/results/MEDT_am_grad_off_test.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/MEDT_am_grad_off_test.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Test-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/results/MEDT_am_grad_off_train.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/MEDT_am_grad_off_train.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Train-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                </div>                
+            </div>        
+          </div>
+
+		  <div class="row">
+            <div class="col-12">
+				<div class="text-center col-12">
+				  <h2 class="tm-text-primary tm-section-title mb-4">Medtronic Data training attention maps: Gradients On</h2>
+				</div>  
+                <div class="mx-auto tm-gallery-container">
+                    <div class="grid tm-gallery">
+                      <a href="img/results/MEDT_am_grad_on_test.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/MEDT_am_grad_on_test.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Test-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/results/MEDT_am_grad_on_train.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/MEDT_am_grad_on_train.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Train-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                </div>                
+            </div>        
+          </div> 
+
+	     <div class="row">
+            <div class="col-12">
+				<div class="text-center col-12">
+				  <h2 class="tm-text-primary tm-section-title mb-4">Medtronic Data training attention maps: Extra-Supervision</h2>
+				  <h6>Using all masks</h6>
+				</div>  
+                <div class="mx-auto tm-gallery-container">
+                    <div class="grid tm-gallery">
+                      <a href="img/results/MEDT_ex_all_train.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/MEDT_ex_all_train.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Train-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/results/MEDT_ex_all_test.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/MEDT_ex_all_test.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Test-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                </div>                
+            </div>        
+          </div>
+
+		 <div class="row">
+            <div class="col-12">
+				<div class="text-center col-12">
+				  <h2 class="tm-text-primary tm-section-title mb-4">Medtronic Data training attention maps: Extra-Supervision</h2>
+				  <h6>Using 10% of the masks</h6>
+				</div>  
+                <div class="mx-auto tm-gallery-container">
+                    <div class="grid tm-gallery">
+                      <a href="img/results/MEDT_ex_01_train.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/MEDT_ex_01_train.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Train-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/results/MEDT_ex_01_test.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/MEDT_ex_01_test.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Test-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                </div>                
+            </div>        
+          </div>
+
+		 <div class="row">
+            <div class="col-12">
+				<div class="text-center col-12">
+				  <h2 class="tm-text-primary tm-section-title mb-4">Medtronic Data training attention maps: Extra-Supervision</h2>
+				  <h6>Using 1% of the masks</h6>
+				</div>  
+                <div class="mx-auto tm-gallery-container">
+                    <div class="grid tm-gallery">
+                      <a href="img/results/MEDT_ex_001_train.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/MEDT_ex_001_train.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Train-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/results/MEDT_ex_001_test.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/MEDT_ex_001_test.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Test-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                </div>                
+            </div>        
+          </div>
+
+		<div class="row">
+            <div class="col-12">
+				<div class="text-center col-12">
+				  <h2 class="tm-text-primary tm-section-title mb-4">Medtronic Data training attention maps: Extra-Supervision & Attention-Mining Self-Supervision: Gradients Off</h2>
+				  <h6>Using 1% of the masks</h6>
+				</div>  
+                <div class="mx-auto tm-gallery-container">
+                    <div class="grid tm-gallery">
+                      <a href="img/results/MEDT_am_ex_grad_off_train.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/MEDT_am_ex_grad_off_train.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Train-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/results/MEDT_am_ex_grad_off_test.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/MEDT_am_ex_grad_off_test.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Test-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                </div>                
+            </div>        
+          </div> 
+		  
+		  <div class="row">
+            <div class="col-12">
+				<div class="text-center col-12">
+				  <h2 class="tm-text-primary tm-section-title mb-4">Medtronic Data training attention maps: Extra-Supervision & Attention-Mining Self-Supervision: Gradients On</h2>
+				  <h6>Using 1% of the masks</h6>
+				</div>  
+                <div class="mx-auto tm-gallery-container">
+                    <div class="grid tm-gallery">
+                      <a href="img/results/MEDT_am_ex_grad_on_train.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/MEDT_am_ex_grad_on_train.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Train-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                      <a href="img/results/MEDT_am_ex_grad_on_test.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/MEDT_am_ex_grad_on_test.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Test-set Samples</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+                    </div>
+                </div>                
+            </div>        
+          </div> 
+      </div>
+	  
+	  
+	  
+	  
+      
+    </section>
+	
+	</section>
+    <section id="achievements" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+              <h2 class="tm-text-primary tm-section-title mb-4">Achievements & Conclusions</h2>
+          </div>   
+		  <p>
+			From the above analysis and discussion on the results, the <b>achievements</b> can be listed as:
+		  </p>
+		  <p>
+			<i class="fas fa-circle"></i> GradCAM as a classification-reasoning visualization technique is applicable to Medtronic data,
+			<br/>&nbsp &nbsp &nbsp and provide the localization capability expected from an attention mechanism.<br/>
+			<i class="fas fa-circle"></i> Extra-Supervision training improves the performance on the ROC measurement, mostly on the 0.05% FA threshold. <br/>
+			<i class="fas fa-circle"></i> Extra-Supervision training significantly improves the performance on the IOU measurement, i.e the localization quality, 
+			<br/>&nbsp &nbsp &nbsp which is also noteable in the presented visulizations of the attention maps. <br/>
+			<i class="fas fa-circle"></i> Both previous advantages are achievable with 10% of the amount of all of the pre-given masks.
+			<br/>&nbsp &nbsp &nbsp Even with only 1% of the pre-given masks, the localization capability is much better and indicates a pretty good generalization capability. <br/>
+			<i class="fas fa-circle"></i> An interesting research direction of data-biases visualization discovered: <br/> 
+			&nbsp &nbsp &nbsp from the process of gradients manipulation through the AM loss path on the masked image backward path, <br/>
+			&nbsp &nbsp &nbsp which pottentially can contribute to the academic developemnt of this and similiar visualization techniques.<br/>	
+		  </p>
+		  <p>
+			A few <b>conclusions</b> derived from the results:
+		  </p>
+		  <p>
+			<i class="fas fa-circle"></i> Attention-Mining self-supervision training is harder to achieve, technically by itself, 
+			<br/>&nbsp &nbsp &nbsp and taking into considerations Medtronic data characteristics and the appropriate to them characteristics of the attention maps,<br/> 
+			&nbsp &nbsp &nbsp mostly that the region of interest is in most cases is smaller then the attention map achieved before AM training.<br/>
+			&nbsp &nbsp &nbsp That should be taken into account.<br/>
+			&nbsp &nbsp &nbsp It can be also noticed that in the combined extra-supervision and attention-mining training, <br/> 
+			&nbsp &nbsp &nbsp the first constrains also the size of the image, so the second with gradients on/off doesn't influence too bad on it <br/>
+			&nbsp &nbsp &nbsp in localization sense, this is an interesting observation, which we mention in the research section.<br/>
+			&nbsp &nbsp &nbsp Another aspect of AM training in our task is the very harsh constraint on the FN we allow,<br/>
+			<i class="fas fa-circle"></i> Attention-Mining self-supervision training is needed to be additionaly examined, more on that in next section. 
+			
+			
+		  </p>
+        </div>
+        
+      </div>
+    </section>
+	
+	<section id="research" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+              <h2 class="tm-text-primary tm-section-title mb-4">Further Research</h2>
+          </div>   
+		  <p>
+			<i class="fas fa-circle"></i> <u>Manipulating gradients through the AM loss path on the masked image backward path :</u> <br/>
+			&nbsp &nbsp &nbsp As it was mentioned before, this is an interesting finding. Technically, our team added the capability to not only set on/off the gradients,<br/>
+			&nbsp &nbsp &nbsp but also to control their magnitude, i.e making it an additional parameter for hyper-tunning in a way such that,<br/>
+			&nbsp &nbsp &nbsp for a magnitude parameter <b>x</b> the magnitude of the gradients of the previously manipulated path will be factorized by <b>1/x</b>,<br/> 
+			&nbsp &nbsp &nbspthus for a big value it will be equal to set the gradients off and for <b>x=1</b> value it will be the default case, as without manipulations.<br/><br/> 
+			<i class="fas fa-circle"></i> <u>Bounds on the attention map size:</u><br/>
+			&nbsp &nbsp &nbsp From the convlusions in the previous section, it can be also efficient to constrain the size of the attention maps, <br/> 
+			&nbsp &nbsp &nbsp either by minimizing it or by bounding it according to some prior precomputed value,<br/> 
+			&nbsp &nbsp &nbsp i.e the average size of the pre-given segmentation masks and e.t.c<br/>
+			&nbsp &nbsp &nbsp In the image attached below we experimented with this technique setting the gradients off<br/>
+			&nbsp &nbsp &nbsp and learning on the negative samples, such that the growing heatmaps on negative also constrained the<br/>
+			&nbsp &nbsp &nbsp size of the attention maps of the positive by the complement principle.<br/><br/>
+			<i class="fas fa-circle"></i><u>Training on all of the lables (not only on positives):</u><br/>
+			&nbsp &nbsp &nbsp One of many different post-experiments with training on negative and positive labels data an AMloss weight adjustments gave an interesting result, <br/> 
+			&nbsp &nbsp &nbsp which should be further investigated. <br/>
+			&nbsp &nbsp &nbsp 0.1% FA ROC results similiar to baseline performace was achieved with a little improvement in IOU and 0.05% ROC.<br/>
+			&nbsp &nbsp &nbsp It was also useful in constraining the attention map area & size of the positive images with gradients set off during AM training<br/> 
+			&nbsp &nbsp &nbsp as the heating grows on the negative on the whole image, and by complement the attention maps of the positive become small.<br/><br/>
+			<i class="fas fa-circle"></i> <u>Observing results on more measurements:</u><br/>
+			&nbsp &nbsp &nbsp Although it doesn't serv the main industrial goal of the project, it can be educational to seek for the lower bound of the FN<br/> 
+			&nbsp &nbsp &nbsp which can show an improvement during AM training, or even AUC measure. <br/> 
+		  </p>
+		  
+        </div>
+        <div class="row">
+            <div class="col-12">
+				<div class="text-center col-12">
+				  <h2 class="tm-text-primary tm-section-title mb-4">Some Screenshots</h2>
+				</div>  
+                <div class="mx-auto tm-gallery-container">
+                    <div class="grid tm-gallery">
+					
+					  <a href="img/results/magnitude_parameter.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/magnitude_parameter.jpg" alt="Image" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Magnitude Factor 10</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+					
+                      <a href="img/results/MEDT_am_heatmap_area_loss_no_grad.jpg">
+                        <figure class="effect-honey tm-gallery-item">
+                          <img src="img/results/MEDT_am_heatmap_area_loss_no_grad.jpg" alt="heating area training" class="img-fluid">
+                          <figcaption>
+                            <h5><i><span>Attention Map area loss training visualizations</span></i></h5>
+                          </figcaption>
+                        </figure>
+                      </a>
+					  
+                    </div>
+                </div>                
+            </div>        
+          </div>
+      </div>
+    </section>
+	
+	<section id="team" class="tm-section-pad-top">
+      <div class="container tm-container-gallery">
+        <div class="row">
+          <div class="text-center col-12">
+              <h2 class="tm-text-primary tm-section-title mb-4">Team</h2>
+          </div>   
+		  <p>
+			Students: <br/>
+			&nbsp &nbsp &nbsp <a href="https://www.linkedin.com/in/ilyak93/">Ilya Kotlov</a> <br/>
+			Industrial Supervisors:<br/> 
+			&nbsp &nbsp &nbsp Mrs. Alexandra Gilinsky, Medtronic <br/>
+			&nbsp &nbsp &nbsp Mr. Itamar Talmi, Medtronic <br/>
+			Academic Supervisors:<br/>  
+			&nbsp &nbsp &nbsp <a href="https://bron.cs.technion.ac.il/">Prof. Alexander Bronstein</a>, Lecturer & Academic Coordinator, Technion <br/>
+			&nbsp &nbsp &nbsp Mr. Lev Yohananov, TA & Assistant, Technion <br/>
+		  </p>
+        </div>
+      </div>
+    </section>
+	
+	
+	
+    <!-- Contact -->
+    <section id="contact" class="tm-section-pad-top tm-parallax-2">
+      <div class="container tm-container-contact">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-4 tm-section-title">Links</h2>
+                <div class="mb-5 tm-underline">
+                  <div class="tm-underline-inner"></div>
+                </div>
+                <p class="mb-5">
+                  The entire project can be found on <a rel="nofollow" href="https://github.com/ilyak93/GAIN-pytorch">GitHub</a>. <br/>
+				  There you'll find the code, user/admin manual, project progress documentation, and more. 
+                </p>
+				<p class="mb-6">
+                  Please <a href="mailto:ilyak93@gmail.com">contact us</a> for any suggestions, insights, questions and additional information about the project.
+                </p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery-1.9.1.min.js"></script>     
+    <script src="slick/slick.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>     
+    <script src="js/bootstrap.min.js"></script> 
+    <script>
+
+      function getOffSet(){
+        var _offset = 450;
+        var windowHeight = window.innerHeight;
+
+        if(windowHeight > 500) {
+          _offset = 400;
+        } 
+        if(windowHeight > 680) {
+          _offset = 300
+        }
+        if(windowHeight > 830) {
+          _offset = 210;
+        }
+
+        return _offset;
+      }
+
+      function setParallaxPosition($doc, multiplier, $object){
+        var offset = getOffSet();
+        var from_top = $doc.scrollTop(),
+          bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
+        $object.css({"background-position" : bg_css });
+      }
+
+      // Parallax function
+      // Adapted based on https://codepen.io/roborich/pen/wpAsm        
+      var background_image_parallax = function($object, multiplier, forceSet){
+        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+        // $object.css({"background-attatchment" : "fixed"});
+
+        if(forceSet) {
+          setParallaxPosition($doc, multiplier, $object);
+        } else {
+          $(window).scroll(function(){          
+            setParallaxPosition($doc, multiplier, $object);
+          });
+        }
+      };
+
+      var background_image_parallax_2 = function($object, multiplier){
+        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+        $object.css({"background-attachment" : "fixed"});
+        $(window).scroll(function(){
+          var firstTop = $object.offset().top,
+              pos = $(window).scrollTop(),
+              yPos = Math.round((multiplier * (firstTop - pos)) - 186);              
+
+          var bg_css = 'center ' + yPos + 'px';
+
+          $object.css({"background-position" : bg_css });
+        });
+      };
+      
+      $(function(){
+        // Hero Section - Background Parallax
+        background_image_parallax($(".tm-parallax"), 0.30, false);
+        background_image_parallax_2($("#contact"), 0.80);   
+        
+        // Handle window resize
+        window.addEventListener('resize', function(){
+          background_image_parallax($(".tm-parallax"), 0.30, true);
+        }, true);
+
+        // Detect window scroll and update navbar
+        $(window).scroll(function(e){          
+          if($(document).scrollTop() > 120) {
+            $('.tm-navbar').addClass("scroll");
+          } else {
+            $('.tm-navbar').removeClass("scroll");
+          }
+        });
+        
+        // Close mobile menu after click 
+        $('#tmNav a').on('click', function(){
+          $('.navbar-collapse').removeClass('show'); 
+        })
+
+        // Scroll to corresponding section with animation
+        $('#tmNav').singlePageNav();        
+        
+        // Add smooth scrolling to all links
+        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 400, function(){
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+
+        // Pop up
+        $('.tm-gallery').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          gallery: { enabled: true }
+        });
+
+        // Gallery
+        $('.tm-gallery').slick({
+          dots: true,
+          infinite: false,
+          slidesToShow: 5,
+          slidesToScroll: 2,
+          responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+        });
+      });
+    </script>
+  </body>
+
+</html>
